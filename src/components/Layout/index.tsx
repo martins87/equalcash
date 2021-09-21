@@ -4,7 +4,6 @@ import { ThemeProvider } from '@material-ui/core/styles'
 
 import theme from '../../theme'
 import Header from '../Header'
-import FooterResponsive from '../FooterResponsive'
 import Footer from '../Footer'
 
 interface LayoutProps {
