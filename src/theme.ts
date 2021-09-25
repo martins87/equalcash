@@ -1,4 +1,4 @@
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme } from '@mui/material/styles'
 
 const theme = createTheme({
   typography: {
@@ -48,7 +48,7 @@ const theme = createTheme({
     }
   },
   palette: {
-    type: 'light',
+    mode: 'light',
     primary: {
       main: 'rgba(37, 37, 37, 1)',
       light: 'rgba(37, 37, 37, 0.6)',
@@ -82,18 +82,18 @@ const theme = createTheme({
       minHeight: 80
     },
   },
-  overrides: {
+  components: {
     MuiCssBaseline: {
-      '@global': {
-         body: {
-           //background: 'linear-gradient(180deg, #0A100A 0%, #091109 100%)',
-           backgroundColor: '#FFF5DE',
-           backgroundRepeat: "no-repeat",
-           backgroundAttachment: "fixed",
+      styleOverrides: {
+        body: {
+          //background: 'linear-gradient(180deg, #0A100A 0%, #091109 100%)',
+          backgroundColor: '#FFF5DE',
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
         },
       },
     },
-  }
+  },
 }, [
   {
     props: {
